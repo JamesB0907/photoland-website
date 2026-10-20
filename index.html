@@ -7,8 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="page-header">
-       <span id="header-text">Welcome to Photoland!</span>
-    </h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <p class="logo">
+            <span aria-hidden="true">📷</span> Photoland
+        </p>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#" aria-current="page">Explore</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Upload</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form" role="search">
+            <label for="search-input" class="visually-hidden">Search photos</label>
+            <input type="search" id="search-input" name="q" placeholder="Search photos...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main id="main-content">
+        <h1 id="page-header">
+        <span id="header-text">Welcome to Photoland!</span>
+        </h1>
+    </main>
+
+    <footer class="site-footer"></footer>
 </body>
 </html>
